@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/ServiceTest" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="VJF80o4fXi.ServiceTest" package="VJF80o4fXi" required_version="3.0"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <icon src="icon.png"/>
+    <name>ServiceTest</name>
+    <tizen:profile name="tv"/>
+    
+    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    
+    <tizen:feature name="http://tizen.org/feature/web.service"/>
+    
+    <tizen:service id="VJF80o4fXi.service" auto-restart="true" on-boot="true">
+      <tizen:content src="js/service.js"/>
+      <tizen:name>ServiceTest_service</tizen:name>
+      <tizen:icon src="icon.png"/>
+      <tizen:description>ServiceTest_service</tizen:description>
+   </tizen:service>
+</widget>
